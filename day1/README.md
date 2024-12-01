@@ -6,6 +6,8 @@ As each location is checked, they will mark it on their list with a star. They f
 
 Collect stars by solving puzzles. Two puzzles will be made available on each day in the Advent calendar; the second puzzle is unlocked when you complete the first. Each puzzle grants one star. Good luck!
 
+
+## Part 1
 You haven't even left yet and the group of Elvish Senior Historians has already hit a problem: their list of locations to check is currently empty. Eventually, someone decides that the best place to check first would be the Chief Historian's office.
 
 Upon pouring into the office, everyone confirms that the Chief Historian is indeed nowhere to be found. Instead, the Elves discover an assortment of notes and lists of historically significant locations! This seems to be the planning the Chief Historian was doing before he left. Perhaps these notes can be used to determine which locations to search?
@@ -16,12 +18,15 @@ There's just one problem: by holding the two lists up side by side (your puzzle 
 
 For example:
 
+```txt
 3   4
 4   3
 2   5
 1   3
 3   9
 3   3
+```
+
 Maybe the lists are only off by a small amount! To find out, pair up the numbers and measure how far apart they are. Pair up the smallest number in the left list with the smallest number in the right list, then the second-smallest left number with the second-smallest right number, and so on.
 
 Within each pair, figure out how far apart the two numbers are; you'll need to add up all of those distances. For example, if you pair up a 3 from the left list with a 7 from the right list, the distance apart is 4; if you pair up a 9 with a 3, the distance apart is 6.
@@ -38,9 +43,9 @@ To find the total distance between the left list and the right list, add up the 
 
 Your actual left and right lists contain many location IDs. What is the total distance between your lists?
 
-Your puzzle answer was 2756096.
+Your puzzle answer was `2756096`.
 
---- Part Two ---
+## Part 2
 Your analysis only confirmed what everyone feared: the two lists of location IDs are indeed very different.
 
 Or are they?
@@ -51,12 +56,15 @@ This time, you'll need to figure out exactly how often each number from the left
 
 Here are the same example lists again:
 
+```txt
 3   4
 4   3
 2   5
 1   3
 3   9
 3   3
+```
+
 For these example lists, here is the process of finding the similarity score:
 
 The first number in the left list is 3. It appears in the right list three times, so the similarity score increases by 3 * 3 = 9.
@@ -69,4 +77,4 @@ So, for these example lists, the similarity score at the end of this process is 
 
 Once again consider your left and right lists. What is their similarity score?
 
-Your puzzle answer was 23117829.
+Your puzzle answer was `23117829`.
